@@ -1,0 +1,7 @@
+{
+  "name": "pdftronDemo",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
