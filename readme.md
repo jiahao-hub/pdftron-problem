@@ -12,7 +12,7 @@ When we use Cordova file plugin, the problem reproduce.
 
 
 
-##Start
+## Start
 
 ###Install ionic
 
@@ -22,7 +22,7 @@ npm install -g @ionic/cli
 
 
 
-###config android studio
+### config android studio
 
 modifier `capacitor.config.json`
 
@@ -32,7 +32,7 @@ modifier `capacitor.config.json`
 
 
 
-###Start program
+### Start program
 
 install dependence
 
