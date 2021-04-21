@@ -14,7 +14,7 @@ When we use Cordova file plugin, the problem reproduce.
 
 ## Start
 
-###Install ionic
+### Install ionic
 
 ```sh
 npm install -g @ionic/cli
