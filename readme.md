@@ -23,16 +23,6 @@ npm install -g @ionic/cli
 
 
 
-### config android studio
-
-modifier `capacitor.config.json`
-
-```
-"windowsAndroidStudioPath": "directory of Android Studio .exe file"
-```
-
-
-
 ### Start program
 
 Install dependence
@@ -51,11 +41,7 @@ ionic cap sync
 
 
 
-Launch  Android Studio
-
-```sh
-npm cap run android
-```
+Use Android Studio open `/android` directory. Now, you can test in android device.
 
 
 
