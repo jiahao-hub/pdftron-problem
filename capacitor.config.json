@@ -2,7 +2,6 @@
   "appId": "io.ionic.starter",
   "appName": "pdftronDemo",
   "bundledWebRuntime": false,
-  "windowsAndroidStudioPath": "D:\\AndroidStudio\\android-studio-ide-201.6953283-windows\\android-studio\\bin\\studio64.exe",
   "npmClient": "npm",
   "webDir": "www",
   "plugins": {
