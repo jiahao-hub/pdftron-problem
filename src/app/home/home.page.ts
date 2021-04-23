@@ -17,23 +17,9 @@ export class HomePage implements OnInit, AfterViewInit{
       path: '../../lib',
       initialDoc: 'https://pdftron.s3.amazonaws.com/downloads/pl/webviewer-demo.pdf'
     }, this.viewer.nativeElement).then(instance => {
+      
       this.wvInstance = instance;
       const { docViewer, annotManager, CoreControls, Annotations } = instance;
-      // now you can access APIs through this.webviewer.getInstance()
-      instance.openElements(['notesPanel']);
-      // see https://www.pdftron.com/documentation/web/guides/ui/apis for the full list of APIs
-
-      // or listen to events from the viewer element
-      this.viewer.nativeElement.addEventListener('pageChanged', (e) => {
-        const [ pageNumber ] = e.detail;
-        console.log(`Current page is ${pageNumber}`);
-      });
-
-      // or from the docViewer instance
-      instance.docViewer.on('annotationsLoaded', async () => {
-        console.log('annotations loaded');
-      });
-
       instance.setHeaderItems((header) => {
         header.push({
           type: 'actionButton',
@@ -47,9 +33,6 @@ export class HomePage implements OnInit, AfterViewInit{
               xfdfString,
             });
             console.log(data)
-            // const arr = new Uint8Array(data);
-            // const blob = new Blob([arr], { type: 'application/pdf' });
-            // const url = URL.createObjectURL(blob);
           },
         });
       });
